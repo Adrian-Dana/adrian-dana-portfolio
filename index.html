@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>This HTML is designed to be placed directly into a custom HTML/embed block on a platform<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>like Canva. It is a single, contained component (no &lt;html&gt;, &lt;head&gt;, or &lt;body&gt; tags).</p>
+<p class="p1">--&gt;</p>
+<p class="p1">&lt;!-- Load Tailwind CSS --&gt;</p>
+<p class="p1">&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;!-- Configure Tailwind for Inter font and a professional color scheme --&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>tailwind.config = {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>theme: {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>extend: {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>colors: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>'primary-blue': '#1e40af', // A deep, professional blue</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>'secondary-gray': '#f4f7fa', // Light background for sections</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>'accent-teal': '#14b8a6', // A complementary accent color</p>
+<p class="p1"><span class="Apple-converted-space">                </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                </span>fontFamily: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>sans: ['Inter', 'sans-serif'],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Ensure all content uses the Inter font within the component */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>* { font-family: 'Inter', sans-serif; }<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Main Component Wrapper - Designed to be embedded within a larger page --&gt;</p>
+<p class="p1">&lt;div id="adrian-dana-cv" class="bg-white font-sans text-gray-800 antialiased"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Header &amp; Contact Bar (Less prominent and fluid for embedding) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="bg-primary-blue text-white py-8 px-4 shadow-xl mb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight"&gt;ADRIAN DANA&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-lg sm:text-xl font-light opacity-90"&gt;Data &amp; Business Insights Analyst&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Contact Information --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mt-4 md:mt-0 md:text-right text-sm space-y-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="flex items-center justify-start md:justify-end"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Icon for Phone --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6.7-6.7A19.79 19.79 0 0 1 2 4.18 2 2 0 0 1 4.18 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>+31 649012191</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="flex items-center justify-start md:justify-end"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Icon for Email --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"&gt;&lt;/path&gt;&lt;polyline points="22,6 12,13 2,6"&gt;&lt;/polyline&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="mailto:adrian.dana090@gmail.com" class="hover:underline"&gt;adrian.dana090@gmail.com&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="flex items-center justify-start md:justify-end"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Icon for LinkedIn --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"&gt;&lt;/path&gt;&lt;rect x="2" y="9" width="4" height="12"&gt;&lt;/rect&gt;&lt;circle cx="4" cy="4" r="2"&gt;&lt;/circle&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="https://linkedin.com/in/Adrian-Dana" target="_blank" rel="noopener noreferrer" class="hover:underline"&gt;/in/Adrian-Dana&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main class="max-w-5xl mx-auto py-4 px-4 space-y-16"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Professional Summary --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6"&gt;Profile&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-lg leading-relaxed bg-secondary-gray p-6 rounded-xl shadow-inner border border-gray-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>I am a **data-driven professional** with hands-on experience transforming raw data into clear business insights. Skilled in **SQL, Python, and Power BI**, designing automated dashboards and preparing reports that support data-driven decision-making. My work bridges technical analysis and business strategy, turning complex datasets into actionable insights that improve performance, optimize processes, and support organizational growth.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Portfolio Section (New) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6"&gt;Key Projects &amp; Portfolio&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-600 mb-6"&gt;Showcasing the application of data analysis to drive business outcomes and improve customer satisfaction.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-6"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Project 1: Customer Behavior Model --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="block bg-secondary-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.02] border-t-4 border-primary-blue"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-primary-blue mb-2"&gt;Customer Satisfaction Modeling&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-gray-700 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Applied research (MBA Thesis) focusing on predictive analytics and modeling techniques (SPSS/R) to forecast customer churn and satisfaction levels.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-xs font-semibold text-accent-teal mt-3 inline-block"&gt;View Details →&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Project 2: Automated Reporting --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="block bg-secondary-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.02] border-t-4 border-primary-blue"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-primary-blue mb-2"&gt;Automated BI Dashboard Suite&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-gray-700 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Developed and automated critical Power BI dashboards integrated with SQL for real-time KPI tracking, reducing report generation time by 40%.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-xs font-semibold text-accent-teal mt-3 inline-block"&gt;View Dashboard →&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Project 3: Full-Stack System --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="block bg-secondary-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.02] border-t-4 border-primary-blue"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-primary-blue mb-2"&gt;Web-Based Management System&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-gray-700 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>MSc Final Project: Designed and implemented a full-stack system for streamlined data operations, demonstrating database architecture and system reliability.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-xs font-semibold text-accent-teal mt-3 inline-block"&gt;View GitHub →&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Technical Skills --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6"&gt;Core Skills &amp; Tools&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-semibold text-primary-blue"&gt;Technical &amp; Analytical&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm mt-1 text-gray-600"&gt;Python (Pandas, NumPy), SQL, Power BI, Tableau, Looker Studio, Excel&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                 </span>&lt;div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-semibold text-primary-blue"&gt;Data Management&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm mt-1 text-gray-600"&gt;ETL Processes, Data Cleaning, Report Automation, API Connections&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-semibold text-primary-blue"&gt;Databases &amp; Platforms&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm mt-1 text-gray-600"&gt;MySQL, PostgreSQL, Microsoft Azure, Git/GitLab, HubSpot, Zendesk&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-semibold text-primary-blue"&gt;Business &amp; Strategy&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm mt-1 text-gray-600"&gt;Data Storytelling, KPI Design, Forecasting, Agile (Scrum), OKRS&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Experience --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6"&gt;Experience&lt;/h2&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Job 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mb-8 p-6 bg-secondary-gray rounded-xl shadow-md border-l-4 border-primary-blue"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-xl font-bold text-primary-blue"&gt;Business &amp; Data Insights Analyst&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-lg font-semibold text-gray-700"&gt;Khalij Fars Online (ISP &amp; Telecommunication Services Provider)&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-sm text-gray-500 mb-3"&gt;Feb 2021 - Jan 2024&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul class="list-none space-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3"&gt;Automated Power BI dashboards connected to SQL databases, **significantly reducing manual reporting time** and improving data reliability.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3"&gt;Conducted sales and customer analysis to identify growth and retention opportunities, contributing to a **notable increase in recurring revenue**.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3"&gt;Delivered executive-level insights that guided **quarterly performance reviews** and data-driven business decisions.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Job 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="p-6 bg-white rounded-xl shadow-md border border-gray-100 border-l-4 border-primary-blue"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-xl font-bold text-primary-blue"&gt;Sales Data Analyst&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-lg font-semibold text-gray-700"&gt;Khalij Fars Online (ISP &amp; Telecommunication Services Provider)&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-sm text-gray-500 mb-3"&gt;Jul 2019 - Feb 2021&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul class="list-none space-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3"&gt;Built and maintained **KPI dashboards in Power BI and Excel**, enabling the sales team to track targets in real-time.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3"&gt;Cleaned, consolidated, and analyzed sales datasets to uncover **trends and upselling opportunities**.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3"&gt;Reduced manual report generation time by **40%** through process automation and improved data structure.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Education --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6"&gt;Education&lt;/h2&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mb-6 pb-4 border-b border-gray-200"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-xl font-bold text-primary-blue"&gt;Master of Business Administration (MBA) - Data Analytics&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-lg font-semibold text-gray-700"&gt;Focused on BI, predictive analytics, and data-driven decision-making.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-sm text-gray-500"&gt;Feb 2024 - Oct 2025 | Rotterdam, NL&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="mt-2 text-gray-600"&gt;Applied research focused on customer behavior analysis and satisfaction modeling.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-xl font-bold text-primary-blue"&gt;Master of Science (MSc) - Computer Software Engineering&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-lg font-semibold text-gray-700"&gt;Focused on software design, database architecture, and data-driven systems.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-sm text-gray-500"&gt;Sep 2018 - Jul 2020&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="mt-2 text-gray-600"&gt;Final Project: Designed and implemented a web-based management system, demonstrating full-stack and system reliability skills.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Footer - Simple and unobtrusive --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="bg-gray-100 mt-12 py-4 px-4 text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-5xl mx-auto text-center text-xs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- New line added here to explicitly state the code is free and reusable --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="mb-1"&gt;این کد HTML کاملاً رایگان است و می‌توانید از آن برای ساخت وب‌سایت‌های شخصی در پلتفرم‌های رایگان (مانند GitHub Pages) استفاده کنید.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Adrian Dana - Data-Driven Professional. Rotterdam, NL.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+</body>
+</html>
