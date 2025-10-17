@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adrian Dana | Data & Business Insights Analyst</title>
+    <title>پورتفولیوی آدریان دانا | تحلیلگر داده و بینش کسب‌وکار</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Configure Tailwind for Inter font and a professional color scheme -->
@@ -15,182 +15,308 @@
                         'primary-blue': '#1e40af', // A deep, professional blue
                         'secondary-gray': '#f4f7fa', // Light background for sections
                         'accent-teal': '#14b8a6', // A complementary accent color
+                        'iran-green': '#10b981', // Emerald green for Iran section
+                        'holland-orange': '#f97316', // Orange for Netherlands section
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['Vazirmatn', 'sans-serif'], // Use Vazirmatn for Persian text
                     },
                 }
             }
         }
     </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        /* Ensure all content uses the Inter font within the component */
-        * { font-family: 'Inter', sans-serif; } 
+        /* Load Vazirmatn font for optimal Persian display */
+        @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+        * { font-family: 'Vazirmatn', sans-serif; } 
+
+        .active-tab {
+            border-bottom: 4px solid theme('colors.accent-teal');
+            color: theme('colors.accent-teal');
+            font-weight: 700;
+        }
+        .main-content-area {
+            min-height: calc(100vh - 120px); /* Adjust height to fill screen minus header/footer */
+        }
     </style>
 </head>
-<body class="bg-gray-50"> <!-- Use a very light gray background for the full page -->
-    
-    <!-- Main Component Wrapper - ID is no longer strictly necessary but kept for reference -->
-    <div id="adrian-dana-cv" class="bg-white font-sans text-gray-800 antialiased min-h-screen shadow-2xl">
+<body class="bg-gray-50">
 
-        <!-- Header & Contact Bar -->
-        <header class="bg-primary-blue text-white py-8 px-4 shadow-xl mb-12">
-            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between">
-                <div>
-                    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">ADRIAN DANA</h1>
-                    <p class="text-lg sm:text-xl font-light opacity-90">Data & Business Insights Analyst</p>
+    <div id="adrian-dana-portfolio" class="bg-white font-sans text-gray-800 antialiased min-h-screen shadow-2xl">
+
+        <!-- Main Navigation Bar -->
+        <nav class="bg-white shadow-lg sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold text-primary-blue">آدریان دانا</span>
+                    </div>
+                    
+                    <!-- Navigation Links -->
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#about-me" id="tab-about-me" onclick="showPage('about-me')" 
+                           class="py-4 px-2 text-gray-500 hover:text-accent-teal transition duration-300 border-b-4 border-transparent">
+                            About Me
+                        </a>
+                        <a href="#iran" id="tab-iran" onclick="showPage('iran')" 
+                           class="py-4 px-2 text-gray-500 hover:text-accent-teal transition duration-300 border-b-4 border-transparent">
+                            ایران معید ماست
+                        </a>
+                        <a href="#netherlands" id="tab-netherlands" onclick="showPage('netherlands')" 
+                           class="py-4 px-2 text-gray-500 hover:text-accent-teal transition duration-300 border-b-4 border-transparent">
+                            کشور زیبای هلند
+                        </a>
+                    </div>
                 </div>
-                <!-- Contact Information -->
-                <div class="mt-4 md:mt-0 md:text-right text-sm space-y-1">
-                    <p class="flex items-center justify-start md:justify-end">
-                        <!-- Icon for Phone -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6.7-6.7A19.79 19.79 0 0 1 2 4.18 2 2 0 0 1 4.18 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                        +31 649012191
+            </div>
+        </nav>
+
+        <main class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 main-content-area">
+
+            <!-- 1. "About Me" Section (Contains CV) -->
+            <div id="page-about-me" class="page-content space-y-16">
+                <!-- Header for About Me -->
+                <header class="bg-primary-blue text-white py-8 px-4 shadow-xl mb-6 rounded-lg">
+                    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between">
+                        <div>
+                            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight" style="direction: ltr;">ADRIAN DANA</h1>
+                            <p class="text-lg sm:text-xl font-light opacity-90" style="direction: ltr;">Data & Business Insights Analyst</p>
+                        </div>
+                        <!-- Contact Information -->
+                        <div class="mt-4 md:mt-0 md:text-left text-sm space-y-1" style="direction: ltr;">
+                            <p class="flex items-center justify-start md:justify-end">
+                                <!-- Icon for Phone -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6.7-6.7A19.79 19.79 0 0 1 2 4.18 2 2 0 0 1 4.18 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                +31 649012191
+                            </p>
+                            <p class="flex items-center justify-start md:justify-end">
+                                <!-- Icon for Email -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <a href="mailto:adrian.dana090@gmail.com" class="hover:underline">adrian.dana090@gmail.com</a>
+                            </p>
+                            <p class="flex items-center justify-start md:justify-end">
+                                <!-- Icon for LinkedIn -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                <a href="https://linkedin.com/in/Adrian-Dana" target="_blank" rel="noopener noreferrer" class="hover:underline">/in/Adrian-Dana</a>
+                            </p>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- CV Content Starts Here -->
+                <section>
+                    <h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6">Profile</h2>
+                    <p class="text-lg leading-relaxed bg-secondary-gray p-6 rounded-xl shadow-inner border border-gray-100">
+                        I am a **data-driven professional** with hands-on experience transforming raw data into clear business insights. Skilled in **SQL, Python, and Power BI**, designing automated dashboards and preparing reports that support data-driven decision-making. My work bridges technical analysis and business strategy, turning complex datasets into actionable insights that improve performance, optimize processes, and support organizational growth.
                     </p>
-                    <p class="flex items-center justify-start md:justify-end">
-                        <!-- Icon for Email -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        <a href="mailto:adrian.dana090@gmail.com" class="hover:underline">adrian.dana090@gmail.com</a>
+                </section>
+
+                <!-- Portfolio Section -->
+                <section>
+                    <h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6">Key Projects & Portfolio</h2>
+                    <p class="text-gray-600 mb-6">Showcasing the application of data analysis to drive business outcomes and improve customer satisfaction.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        
+                        <!-- Project 1: Customer Behavior Model -->
+                        <div class="block bg-secondary-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.02] border-t-4 border-primary-blue">
+                            <h3 class="text-xl font-bold text-primary-blue mb-2">Customer Satisfaction Modeling</h3>
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                Applied research (MBA Thesis) focusing on predictive analytics and modeling techniques (SPSS/R) to forecast customer churn and satisfaction levels.
+                            </p>
+                            <span class="text-xs font-semibold text-accent-teal mt-3 inline-block">View Details →</span>
+                        </div>
+                        
+                        <!-- Project 2: Automated Reporting -->
+                        <div class="block bg-secondary-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.02] border-t-4 border-primary-blue">
+                            <h3 class="text-xl font-bold text-primary-blue mb-2">Automated BI Dashboard Suite</h3>
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                Developed and automated critical Power BI dashboards integrated with SQL for real-time KPI tracking, reducing report generation time by 40%.
+                            </p>
+                            <span class="text-xs font-semibold text-accent-teal mt-3 inline-block">View Dashboard →</span>
+                        </div>
+
+                        <!-- Project 3: Full-Stack System -->
+                        <div class="block bg-secondary-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.02] border-t-4 border-primary-blue">
+                            <h3 class="text-xl font-bold text-primary-blue mb-2">Web-Based Management System</h3>
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                MSc Final Project: Designed and implemented a full-stack system for streamlined data operations, demonstrating database architecture and system reliability.
+                            </p>
+                            <span class="text-xs font-semibold text-accent-teal mt-3 inline-block">View GitHub →</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Technical Skills -->
+                <section>
+                    <h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6">Core Skills & Tools</h2>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                        
+                        <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition duration-300">
+                            <p class="font-semibold text-primary-blue">Technical & Analytical</p>
+                            <p class="text-sm mt-1 text-gray-600">Python (Pandas, NumPy), SQL, Power BI, Tableau, Looker Studio, Excel</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition duration-300">
+                            <p class="font-semibold text-primary-blue">Data Management</p>
+                            <p class="text-sm mt-1 text-gray-600">ETL Processes, Data Cleaning, Report Automation, API Connections</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition duration-300">
+                            <p class="font-semibold text-primary-blue">Databases & Platforms</p>
+                            <p class="text-sm mt-1 text-gray-600">MySQL, PostgreSQL, Microsoft Azure, Git/GitLab, HubSpot, Zendesk</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition duration-300">
+                            <p class="font-semibold text-primary-blue">Business & Strategy</p>
+                            <p class="text-sm mt-1 text-gray-600">Data Storytelling, KPI Design, Forecasting, Agile (Scrum), OKRS</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience -->
+                <section>
+                    <h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6">Experience</h2>
+                    
+                    <!-- Job 1 -->
+                    <div class="mb-8 p-6 bg-secondary-gray rounded-xl shadow-md border-l-4 border-primary-blue">
+                        <h3 class="text-xl font-bold text-primary-blue">Business & Data Insights Analyst</h3>
+                        <p class="text-lg font-semibold text-gray-700">Khalij Fars Online (ISP & Telecommunication Services Provider)</p>
+                        <p class="text-sm text-gray-500 mb-3">Feb 2021 - Jan 2024</p>
+                        <ul class="list-none space-y-2">
+                            <li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3">Automated Power BI dashboards connected to SQL databases, **significantly reducing manual reporting time** and improving data reliability.</li>
+                            <li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3">Conducted sales and customer analysis to identify growth and retention opportunities, contributing to a **notable increase in recurring revenue**.</li>
+                            <li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3">Delivered executive-level insights that guided **quarterly performance reviews** and data-driven business decisions.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100 border-l-4 border-primary-blue">
+                        <h3 class="text-xl font-bold text-primary-blue">Sales Data Analyst</h3>
+                        <p class="text-lg font-semibold text-gray-700">Khalij Fars Online (ISP & Telecommunication Services Provider)</p>
+                        <p class="text-sm text-gray-500 mb-3">Jul 2019 - Feb 2021</p>
+                        <ul class="list-none space-y-2">
+                            <li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3">Built and maintained **KPI dashboards in Power BI and Excel**, enabling the sales team to track targets in real-time.</li>
+                            <li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3">Cleaned, consolidated, and analyzed sales datasets to uncover **trends and upselling opportunities**.</li>
+                            <li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3">Reduced manual report generation time by **40%** through process automation and improved data structure.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section>
+                    <h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6">Education</h2>
+                    
+                    <div class="mb-6 pb-4 border-b border-gray-200">
+                        <p class="text-xl font-bold text-primary-blue">Master of Business Administration (MBA) - Data Analytics</p>
+                        <p class="text-lg font-semibold text-gray-700">Focused on BI, predictive analytics, and data-driven decision-making.</p>
+                        <p class="text-sm text-gray-500">Feb 2024 - Oct 2025 | Rotterdam, NL</p>
+                        <p class="mt-2 text-gray-600">Applied research focused on customer behavior analysis and satisfaction modeling.</p>
+                    </div>
+                    
+                    <div>
+                        <p class="text-xl font-bold text-primary-blue">Master of Science (MSc) - Computer Software Engineering</p>
+                        <p class="text-lg font-semibold text-gray-700">Focused on software design, database architecture, and data-driven systems.</p>
+                        <p class="text-sm text-gray-500">Sep 2018 - Jul 2020</p>
+                        <p class="mt-2 text-gray-600">Final Project: Designed and implemented a web-based management system, demonstrating full-stack and system reliability skills.</p>
+                    </div>
+
+                </section>
+                <!-- CV Content Ends Here -->
+
+            </div>
+
+            <!-- 2. "ایران معید ماست" Section -->
+            <div id="page-iran" class="page-content hidden">
+                <div class="bg-white p-8 rounded-xl shadow-2xl border-t-8 border-iran-green">
+                    <h2 class="text-4xl font-extrabold text-iran-green mb-6 border-b pb-3">ایران معید ماست</h2>
+                    <p class="text-xl text-gray-700 mb-6 leading-loose">
+                        این بخش به هویت و ریشه‌های ارزشمند ما، و امید به آینده‌ای روشن اختصاص دارد. ایران سرزمین تاریخ، فرهنگ غنی، و مردمان سخت‌کوش است.
                     </p>
-                    <p class="flex items-center justify-start md:justify-end">
-                        <!-- Icon for LinkedIn -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                        <a href="https://linkedin.com/in/Adrian-Dana" target="_blank" rel="noopener noreferrer" class="hover:underline">/in/Adrian-Dana</a>
+                    <ul class="list-disc list-inside text-lg text-gray-600 space-y-3 pr-4">
+                        <li>تمرکز بر توانمندی‌ها و استعدادهای نیروی جوان ایرانی.</li>
+                        <li>بررسی نقش ایرانیان مهاجر در پیشرفت‌های جهانی در حوزه داده و تکنولوژی.</li>
+                        <li>امید به فردایی بهتر با تکیه بر دانش و پشتکار.</li>
+                    </ul>
+                    <p class="mt-8 text-sm text-gray-500">
+                        این محتوا یک Placeholder موقت است و به درخواست شما برای بخش "ایران معید ماست" ایجاد شده است. شما می‌توانید این قسمت را با دیدگاه‌های شخصی و عمیق خود در مورد فرهنگ، جامعه یا سهم ایرانیان در جهان پر کنید.
                     </p>
                 </div>
             </div>
-        </header>
 
-        <main class="max-w-5xl mx-auto py-4 px-4 space-y-16">
-
-            <!-- Professional Summary -->
-            <section>
-                <h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6">Profile</h2>
-                <p class="text-lg leading-relaxed bg-secondary-gray p-6 rounded-xl shadow-inner border border-gray-100">
-                    I am a **data-driven professional** with hands-on experience transforming raw data into clear business insights. Skilled in **SQL, Python, and Power BI**, designing automated dashboards and preparing reports that support data-driven decision-making. My work bridges technical analysis and business strategy, turning complex datasets into actionable insights that improve performance, optimize processes, and support organizational growth.
-                </p>
-            </section>
-
-            <!-- Portfolio Section (New) -->
-            <section>
-                <h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6">Key Projects & Portfolio</h2>
-                <p class="text-gray-600 mb-6">Showcasing the application of data analysis to drive business outcomes and improve customer satisfaction.</p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- 3. "کشور زیبای هلند" Section -->
+            <div id="page-netherlands" class="page-content hidden">
+                <div class="bg-white p-8 rounded-xl shadow-2xl border-t-8 border-holland-orange">
+                    <h2 class="text-4xl font-extrabold text-holland-orange mb-6 border-b pb-3">کشور زیبای هلند</h2>
                     
-                    <!-- Project 1: Customer Behavior Model -->
-                    <a href="#" class="block bg-secondary-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.02] border-t-4 border-primary-blue">
-                        <h3 class="text-xl font-bold text-primary-blue mb-2">Customer Satisfaction Modeling</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            Applied research (MBA Thesis) focusing on predictive analytics and modeling techniques (SPSS/R) to forecast customer churn and satisfaction levels.
-                        </p>
-                        <span class="text-xs font-semibold text-accent-teal mt-3 inline-block">View Details →</span>
-                    </a>
+                    <p class="text-xl text-gray-700 mb-6 leading-loose">
+                        هلند، مهد نوآوری، مدیریت آب و فرهنگ دوچرخه‌سواری، مکانی ایده‌آل برای زندگی و ادامه تحصیل در حوزه دیتا و تکنولوژی است.
+                    </p>
                     
-                    <!-- Project 2: Automated Reporting -->
-                    <a href="#" class="block bg-secondary-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.02] border-t-4 border-primary-blue">
-                        <h3 class="text-xl font-bold text-primary-blue mb-2">Automated BI Dashboard Suite</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            Developed and automated critical Power BI dashboards integrated with SQL for real-time KPI tracking, reducing report generation time by 40%.
-                        </p>
-                        <span class="text-xs font-semibold text-accent-teal mt-3 inline-block">View Dashboard →</span>
-                    </a>
-
-                    <!-- Project 3: Full-Stack System -->
-                    <a href="#" class="block bg-secondary-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.02] border-t-4 border-primary-blue">
-                        <h3 class="text-xl font-bold text-primary-blue mb-2">Web-Based Management System</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            MSc Final Project: Designed and implemented a full-stack system for streamlined data operations, demonstrating database architecture and system reliability.
-                        </p>
-                        <span class="text-xs font-semibold text-accent-teal mt-3 inline-block">View GitHub →</span>
-                    </a>
-                </div>
-            </section>
-
-            <!-- Technical Skills -->
-            <section>
-                <h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6">Core Skills & Tools</h2>
-                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                    
-                    <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition duration-300">
-                        <p class="font-semibold text-primary-blue">Technical & Analytical</p>
-                        <p class="text-sm mt-1 text-gray-600">Python (Pandas, NumPy), SQL, Power BI, Tableau, Looker Studio, Excel</p>
+                    <!-- Placeholder content based on Google Search grounding about the Netherlands -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
+                        <div class="bg-secondary-gray p-4 rounded-lg shadow-inner">
+                            <h3 class="font-bold text-primary-blue mb-2">قطب تحلیل داده و فناوری</h3>
+                            <p class="text-gray-600">
+                                هلند یکی از پیشگامان اروپا در زمینه داده‌های بزرگ (Big Data) و هوش مصنوعی (AI) است و فرصت‌های شغلی فراوانی در شهرهایی مانند آمستردام و روتردام ارائه می‌دهد.
+                            </p>
+                        </div>
+                        <div class="bg-secondary-gray p-4 rounded-lg shadow-inner">
+                            <h3 class="font-bold text-primary-blue mb-2">کیفیت بالای زندگی و مهاجرت</h3>
+                            <p class="text-gray-600">
+                                این کشور به دلیل توازن عالی بین کار و زندگی، سیستم آموزشی قوی و جامعه چندفرهنگی و پذیرای خود، مقصدی جذاب برای مهاجران تحصیلی و شغلی است.
+                            </p>
+                        </div>
                     </div>
-                    <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition duration-300">
-                        <p class="font-semibold text-primary-blue">Data Management</p>
-                        <p class="text-sm mt-1 text-gray-600">ETL Processes, Data Cleaning, Report Automation, API Connections</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition duration-300">
-                        <p class="font-semibold text-primary-blue">Databases & Platforms</p>
-                        <p class="text-sm mt-1 text-gray-600">MySQL, PostgreSQL, Microsoft Azure, Git/GitLab, HubSpot, Zendesk</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition duration-300">
-                        <p class="font-semibold text-primary-blue">Business & Strategy</p>
-                        <p class="text-sm mt-1 text-gray-600">Data Storytelling, KPI Design, Forecasting, Agile (Scrum), OKRS</p>
-                    </div>
-                </div>
-            </section>
 
-            <!-- Experience -->
-            <section>
-                <h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6">Experience</h2>
-                
-                <!-- Job 1 -->
-                <div class="mb-8 p-6 bg-secondary-gray rounded-xl shadow-md border-l-4 border-primary-blue">
-                    <h3 class="text-xl font-bold text-primary-blue">Business & Data Insights Analyst</h3>
-                    <p class="text-lg font-semibold text-gray-700">Khalij Fars Online (ISP & Telecommunication Services Provider)</p>
-                    <p class="text-sm text-gray-500 mb-3">Feb 2021 - Jan 2024</p>
-                    <ul class="list-none space-y-2">
-                        <li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3">Automated Power BI dashboards connected to SQL databases, **significantly reducing manual reporting time** and improving data reliability.</li>
-                        <li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3">Conducted sales and customer analysis to identify growth and retention opportunities, contributing to a **notable increase in recurring revenue**.</li>
-                        <li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3">Delivered executive-level insights that guided **quarterly performance reviews** and data-driven business decisions.</li>
-                    </ul>
+                    <p class="mt-8 text-sm text-gray-500">
+                        این محتوا با الهام از اطلاعات عمومی در مورد هلند به عنوان یک کشور اروپایی پیشرو در فناوری و کیفیت زندگی، نوشته شده است.
+                    </p>
                 </div>
-
-                <!-- Job 2 -->
-                <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100 border-l-4 border-primary-blue">
-                    <h3 class="text-xl font-bold text-primary-blue">Sales Data Analyst</h3>
-                    <p class="text-lg font-semibold text-gray-700">Khalij Fars Online (ISP & Telecommunication Services Provider)</p>
-                    <p class="text-sm text-gray-500 mb-3">Jul 2019 - Feb 2021</p>
-                    <ul class="list-none space-y-2">
-                        <li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3">Built and maintained **KPI dashboards in Power BI and Excel**, enabling the sales team to track targets in real-time.</li>
-                        <li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3">Cleaned, consolidated, and analyzed sales datasets to uncover **trends and upselling opportunities**.</li>
-                        <li class="flex items-start before:content-['•'] before:text-accent-teal before:font-extrabold before:mr-3">Reduced manual report generation time by **40%** through process automation and improved data structure.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Education -->
-            <section>
-                <h2 class="text-3xl font-bold border-b-4 border-accent-teal pb-2 mb-6">Education</h2>
-                
-                <div class="mb-6 pb-4 border-b border-gray-200">
-                    <p class="text-xl font-bold text-primary-blue">Master of Business Administration (MBA) - Data Analytics</p>
-                    <p class="text-lg font-semibold text-gray-700">Focused on BI, predictive analytics, and data-driven decision-making.</p>
-                    <p class="text-sm text-gray-500">Feb 2024 - Oct 2025 | Rotterdam, NL</p>
-                    <p class="mt-2 text-gray-600">Applied research focused on customer behavior analysis and satisfaction modeling.</p>
-                </div>
-                
-                <div>
-                    <p class="text-xl font-bold text-primary-blue">Master of Science (MSc) - Computer Software Engineering</p>
-                    <p class="text-lg font-semibold text-gray-700">Focused on software design, database architecture, and data-driven systems.</p>
-                    <p class="text-sm text-gray-500">Sep 2018 - Jul 2020</p>
-                    <p class="mt-2 text-gray-600">Final Project: Designed and implemented a web-based management system, demonstrating full-stack and system reliability skills.</p>
-                </div>
-
-            </section>
+            </div>
 
         </main>
 
-        <!-- Footer - Simple and unobtrusive -->
+        <!-- Footer -->
         <footer class="bg-gray-100 mt-12 py-4 px-4 text-gray-600">
-            <div class="max-w-5xl mx-auto text-center text-xs">
-                <!-- New line added here to explicitly state the code is free and reusable -->
-                <p class="mb-1">تمام حقوق این پیج متعلق به محمدعلی دانا می باشد</p>
+            <div class="max-w-7xl mx-auto text-center text-xs">
+                <p class="mb-1">.</p>
                 <p>Adrian Dana - Data-Driven Professional. Rotterdam, NL.</p>
             </div>
         </footer>
 
     </div>
+
+    <!-- JavaScript for Page Switching -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check for hash on load to determine which page to show
+            const initialPage = window.location.hash.substring(1) || 'about-me';
+            showPage(initialPage);
+        });
+
+        function showPage(pageId) {
+            // Hide all content pages
+            document.querySelectorAll('.page-content').forEach(page => {
+                page.classList.add('hidden');
+            });
+
+            // Remove active style from all tabs
+            document.querySelectorAll('.flex a').forEach(tab => {
+                tab.classList.remove('active-tab');
+            });
+
+            // Show the requested page
+            const targetPage = document.getElementById(`page-${pageId}`);
+            if (targetPage) {
+                targetPage.classList.remove('hidden');
+            }
+
+            // Set active style for the requested tab
+            const targetTab = document.getElementById(`tab-${pageId}`);
+            if (targetTab) {
+                targetTab.classList.add('active-tab');
+            }
+
+            // Update URL hash for sharing (optional)
+            history.pushState(null, null, `#${pageId}`);
+        }
+    </script>
 </body>
 </html>
